@@ -1,0 +1,24 @@
+--- libsgml-1.1.4/src/Makefile.in.orig	2003-03-24 09:48:21.000000000 +0100
++++ libsgml-1.1.4/src/Makefile.in	2006-12-28 01:17:41.955281502 +0100
+@@ -6,8 +6,8 @@
+ DEBUG=@DEBUG@
+ INCLUDE=-I../include -I.
+ LIBS=@LIBS@
+-CFLAGS=${DEBUG} ${INCLUDE} -Wall -O3
+-LFLAGS=${DEBUG} ${INCLUDE} -Wall -O3 -o
++CFLAGS=${DEBUG} ${INCLUDE} -Wall
++LFLAGS=${DEBUG} ${INCLUDE} -Wall -o
+ OBJS=DomComment.o DomDocument.o DomElement.o DomNode.o DomNodeList.o DomText.o SgmlExtensionHtml.o SgmlExtensionXml.o SgmlParser.o Variant.o
+ LIBNAME=../libsgml.a
+ LIBEXEC=ar rc ${LIBNAME} ${OBJS} ${LIBS} && ranlib ${LIBNAME}
+--- libsgml-1.1.4/configure.in.orig	2003-03-24 09:48:21.000000000 +0100
++++ libsgml-1.1.4/configure.in	2006-12-28 01:18:06.332670690 +0100
+@@ -42,7 +42,7 @@
+ if test "x$mmd_sys_os" = "xSolaris"; then 
+ 	LIBBIN="ld -dy -r -o ../libsgml.so \${OBJS}"
+ else
+-	LIBBIN="\${CXX} \${DEBUG} -Wall -O3 -shared -fPIC -o ../libsgml.so \${OBJS}"
++	LIBBIN="\${CC} \${DEBUG} -Wall -shared -fPIC -o ../libsgml.so \${OBJS}"
+ fi
+ 
+ AC_SUBST(LIBS)
