@@ -1,5 +1,5 @@
 Summary:	Small, fast, state based SGML parser
-Summary(pl.UTF-8):   Mały, szybki, oparty na stanach parser SGML-a
+Summary(pl.UTF-8):	Mały, szybki, oparty na stanach parser SGML-a
 Name:		libsgml
 Version:	1.1.4
 Release:	1
@@ -28,7 +28,7 @@ libsgml to mały, szybki, oparty na stanach parser SGML-a. Obsługuje:
 
 %package devel
 Summary:	Header files for libsgml library
-Summary(pl.UTF-8):   Pliki nagłówkowe biblioteki libsgml
+Summary(pl.UTF-8):	Pliki nagłówkowe biblioteki libsgml
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 
@@ -40,7 +40,7 @@ Pliki nagłówkowe biblioteki libsgml.
 
 %package static
 Summary:	Static libsgml library
-Summary(pl.UTF-8):   Statyczna biblioteka libsgml
+Summary(pl.UTF-8):	Statyczna biblioteka libsgml
 Group:		Development/Libraries
 Requires:	%{name}-devel = %{version}-%{release}
 
