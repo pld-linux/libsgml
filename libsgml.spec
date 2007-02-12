@@ -1,5 +1,5 @@
 Summary:	Small, fast, state based SGML parser
-Summary(pl):	Ma³y, szybki, oparty na stanach parser SGML-a
+Summary(pl.UTF-8):   MaÅ‚y, szybki, oparty na stanach parser SGML-a
 Name:		libsgml
 Version:	1.1.4
 Release:	1
@@ -19,35 +19,35 @@ libsgml is a small, fast, state based SGML parser. It supports:
  - XML DOM parsing,
  - Custom SGML parsing.
 
-%description -l pl
-libsgml to ma³y, szybki, oparty na stanach parser SGML-a. Obs³uguje:
- - analizê HTML DOM z cytowaniem znaczników i usuwaniem tekstu,
-   komentarzy i elementów,
- - analizê XML DOM,
- - analizê w³asnego SGML-a.
+%description -l pl.UTF-8
+libsgml to maÅ‚y, szybki, oparty na stanach parser SGML-a. ObsÅ‚uguje:
+ - analizÄ™ HTML DOM z cytowaniem znacznikÃ³w i usuwaniem tekstu,
+   komentarzy i elementÃ³w,
+ - analizÄ™ XML DOM,
+ - analizÄ™ wÅ‚asnego SGML-a.
 
 %package devel
 Summary:	Header files for libsgml library
-Summary(pl):	Pliki nag³ówkowe biblioteki libsgml
+Summary(pl.UTF-8):   Pliki nagÅ‚Ã³wkowe biblioteki libsgml
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 
 %description devel
 Header files for libsgml library.
 
-%description devel -l pl
-Pliki nag³ówkowe biblioteki libsgml.
+%description devel -l pl.UTF-8
+Pliki nagÅ‚Ã³wkowe biblioteki libsgml.
 
 %package static
 Summary:	Static libsgml library
-Summary(pl):	Statyczna biblioteka libsgml
+Summary(pl.UTF-8):   Statyczna biblioteka libsgml
 Group:		Development/Libraries
 Requires:	%{name}-devel = %{version}-%{release}
 
 %description static
 Static libsgml library.
 
-%description static -l pl
+%description static -l pl.UTF-8
 Statyczna biblioteka libsgml.
 
 %prep
