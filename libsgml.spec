@@ -2,7 +2,7 @@ Summary:	Small, fast, state based SGML parser
 Summary(pl.UTF-8):	Mały, szybki, oparty na stanach parser SGML-a
 Name:		libsgml
 Version:	1.1.4
-Release:	1
+Release:	2
 License:	free (see License)
 Group:		Libraries
 Source0:	http://www.hick.org/code/skape/libsgml/%{name}-%{version}.tar.gz
